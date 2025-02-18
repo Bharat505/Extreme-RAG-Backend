@@ -3,11 +3,11 @@ import re
 import json
 import time
 import pandas as pd
-from google import genai
 from concurrent.futures import ThreadPoolExecutor  # For parallel processing
+import google.generativeai as genai  # Corrected import
 
 # Initialize the Gemini client
-client = genai.Client(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")
+genai.configure(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")  # Corrected client setup
 
 # ----------------- Utility Functions -----------------
 
@@ -22,9 +22,9 @@ def call_gemini(prompt: str, model: str = "gemini-2.0-flash", max_retries: int =
     """Calls the Gemini API and ensures valid JSON output."""
     for attempt in range(max_retries):
         try:
-            response = client.models.generate_content(model=model, contents=prompt)
+            response = genai.GenerativeModel(model).generate_content(prompt)  # ✅ Fixed API call
             raw_text = clean_json_response(response.text)
-            return json.loads(raw_text)  
+            return json.loads(raw_text)
         except json.JSONDecodeError:
             print(f"❌ Invalid JSON Response (Attempt {attempt + 1}): {response.text[:200]}")
             if attempt < max_retries - 1:
@@ -33,9 +33,25 @@ def call_gemini(prompt: str, model: str = "gemini-2.0-flash", max_retries: int =
                 raise ValueError("API returned invalid JSON")
         except Exception as e:
             if attempt < max_retries - 1:
-                time.sleep(2)  
+                time.sleep(2)
             else:
                 raise RuntimeError(f"Error calling Gemini API: {e}")
+
+def call_gemini_with_backoff(prompt, max_retries=3):
+    """ Calls Gemini API with backoff and ensures JSON response. """
+    for attempt in range(max_retries):
+        try:
+            response = call_gemini(prompt)
+            if isinstance(response, dict):
+                return response
+            return json.loads(response)
+        except (json.JSONDecodeError, TypeError):
+            print(f"❌ Invalid JSON Response (Attempt {attempt + 1})")
+            if attempt < max_retries - 1:
+                continue
+            return {"answer": "Error: Unable to process request."}
+    return {"answer": "Error: Unable to process request."}
+
 
 # ----------------- LLM-Based Summarization, Q&A, and Table Extraction -----------------
 

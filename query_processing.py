@@ -4,10 +4,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import time
 import re
-from google import genai
+import google.generativeai as genai  # Corrected import
 
 # Initialize the Gemini client
-client = genai.Client(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")
+genai.configure(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")  # Corrected client setup
 
 
 def clean_json_response(response_text: str) -> str:
@@ -22,7 +22,7 @@ def call_gemini(prompt: str, model: str = "gemini-2.0-flash", max_retries: int =
     """Calls the Gemini API and ensures valid JSON output."""
     for attempt in range(max_retries):
         try:
-            response = client.models.generate_content(model=model, contents=prompt)
+            response = genai.GenerativeModel(model).generate_content(prompt)  # Corrected API call
             raw_text = clean_json_response(response.text)
             return json.loads(raw_text)
         except json.JSONDecodeError:
@@ -36,6 +36,8 @@ def call_gemini(prompt: str, model: str = "gemini-2.0-flash", max_retries: int =
                 time.sleep(2)
             else:
                 raise RuntimeError(f"Error calling Gemini API: {e}")
+
+
 def call_gemini_with_backoff(prompt, max_retries=3):
     """ Calls Gemini API with backoff and ensures JSON response. """
     for attempt in range(max_retries):
@@ -50,6 +52,7 @@ def call_gemini_with_backoff(prompt, max_retries=3):
                 continue
             return {"answer": "Error: Unable to process request."}
     return {"answer": "Error: Unable to process request."}
+
 
 def load_step3_data_to_df(step3_data_path="processed_data/step3_data.json"):
     """Loads Step 3 JSON data and creates a DataFrame with chunk_id, page_range, chunk_text, qa_pairs, keywords."""

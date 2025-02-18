@@ -8,7 +8,6 @@ from starlette.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import glob
-
 from step1_extract import extract_full_content_structured
 from step2_chunking import process_chunking
 from step3_summarization import process_step3, save_step3_data
@@ -16,7 +15,7 @@ from step4_comparison import generate_final_summaries_and_comparisons
 from step4_top_questions import process_top_questions
 from step4_variety_tables import process_forced_variety_tables, visualize_top_tables
 from query_processing import load_step3_data_to_df, answer_user_question
-
+import google.generativeai as genai  # Corrected import
 # Initialize FastAPI
 app = FastAPI()
 
