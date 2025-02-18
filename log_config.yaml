@@ -1,0 +1,15 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  default:
+    format: "%(asctime)s - %(levelname)s - %(message)s"
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: default
+    level: DEBUG
+loggers:
+  uvicorn:
+    level: DEBUG
+    handlers: [console]
+    propagate: no

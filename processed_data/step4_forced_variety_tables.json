@@ -1,0 +1,612 @@
+[
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_2_6",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_2",
+        "title": "VCIP Program Weighting",
+        "recommended_visualization": "stacked area chart",
+        "insight": "Visual representation of the weighting and categories of the VCIP program.",
+        "table_data": {
+            "columns": [
+                "VARIABLE CASH INCENTIVE PROGRAM (VCIP) 14%",
+                ""
+            ],
+            "rows": [
+                [
+                    "One-year performance period",
+                    ""
+                ],
+                [
+                    "Health Safety & Environment (20%)",
+                    ""
+                ],
+                [
+                    "Operational (30%)",
+                    ""
+                ],
+                [
+                    "Financial (30%)",
+                    ""
+                ],
+                [
+                    "Strategic Milestones (10%)",
+                    ""
+                ],
+                [
+                    "Energy Transition Milestones (10%)",
+                    ""
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_22_4",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_22",
+        "title": "CEO Compensation vs. Company Performance (2020-2023)",
+        "recommended_visualization": "line chart",
+        "insight": "Tracks CEO compensation, net income, and total shareholder return (TSR) over time.",
+        "table_data": {
+            "columns": [
+                "Year",
+                "SCT Total(1) for CEO(2)",
+                "Compensation Actually Paid(3) to CEO(2)",
+                "Average SCT Total(1) for Non- CEO NEOs(4)",
+                "Average Compensation Actually Paid(3) to Non-CEO NEOs(4)",
+                "Value of initial fixed $100 investment based on:",
+                "Net Income / (Loss) (Millions of dollars)",
+                "CSM: 1-Year Relative ROCE(7)",
+                "Company TSR(5)",
+                "Peer Group TSR(6)"
+            ],
+            "rows": [
+                [
+                    "2023",
+                    "$20,770,673",
+                    "$35,636,692",
+                    "$6,971,974",
+                    "$ 9,288,633",
+                    "$208.09",
+                    "10,957",
+                    "58th",
+                    "$167.19",
+                    null
+                ],
+                [
+                    "2022",
+                    "19,972,339",
+                    "74,688,355",
+                    "6,133,798",
+                    "14,617,414",
+                    "203.11",
+                    "18,680",
+                    "64th",
+                    "181.75",
+                    null
+                ],
+                [
+                    "2021",
+                    "23,886,640",
+                    "59,903,247",
+                    "7,379,438",
+                    "12,790,641",
+                    "119.06",
+                    "8,079",
+                    "62nd",
+                    "105.85",
+                    null
+                ],
+                [
+                    "2020",
+                    "28,054,551",
+                    "31,889",
+                    "7,352,737",
+                    "1,715,641",
+                    "64.02",
+                    "(2,701)",
+                    "70th",
+                    "67.14",
+                    null
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_9_1",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_9",
+        "title": "Director Compensation Summary",
+        "recommended_visualization": "bar chart",
+        "insight": "Summarizes the compensation for each director, including fees, stock awards, and other compensation components.",
+        "table_data": {
+            "columns": [
+                "Name",
+                "Fees Earned or Paid in Cash(2)",
+                "Stock Awards(3)(4)",
+                "Option Awards",
+                "Non-Equity Incentive Plan Compensation",
+                "Change in Pension Value and Nonqualified Deferred Compensation on Earnings",
+                "All Other Compensation(5)",
+                "Total"
+            ],
+            "rows": [
+                [
+                    "D.V. Arriola",
+                    "$132,500",
+                    "$220,050",
+                    "$\u2014",
+                    "$\u2014",
+                    "$\u2014",
+                    "$10,000",
+                    "$362,550"
+                ],
+                [
+                    "C.M. Devine (retired)(6)",
+                    "53,125",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "30,790",
+                    "303,965"
+                ],
+                [
+                    "J. Freeman (resigned)(7)",
+                    "98,333",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "318,383"
+                ],
+                [
+                    "G. Huey Evans",
+                    "129,583",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "26,218",
+                    "375,851"
+                ],
+                [
+                    "J.A. Joerres",
+                    "147,500",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "367,550"
+                ],
+                [
+                    "W.H. McRaven",
+                    "132,500",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "352,550"
+                ],
+                [
+                    "S. Mulligan",
+                    "132,500",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "352,550"
+                ],
+                [
+                    "E.D. Mullins",
+                    "138,049",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "10,000",
+                    "368,099"
+                ],
+                [
+                    "A.N. Murti",
+                    "157,500",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "377,550"
+                ],
+                [
+                    "R.A. Niblock",
+                    "188,274",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "10,000",
+                    "418,324"
+                ],
+                [
+                    "D.T. Seaton",
+                    "127,500",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "347,550"
+                ],
+                [
+                    "R.A. Walker",
+                    "132,500",
+                    "220,050",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "\u2014",
+                    "352,550"
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_2_10",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_2",
+        "title": "ConocoPhillips Executive Compensation Practices",
+        "recommended_visualization": "bar chart",
+        "insight": "Summarizes key 'What We Do' and 'What We Don't Do' compensation practices, highlighting alignment with stockholder interests and risk management.",
+        "table_data": {
+            "columns": [
+                "WHAT WE DO",
+                "WHAT WE DON\u2019T DO"
+            ],
+            "rows": [
+                [
+                    "% Executive compensation aligned with stockholder interests and primarily performance based (see pages 72 & 74)",
+                    "No excise tax gross-ups for change in control plan participants"
+                ],
+                [
+                    "% \u201cDouble trigger\u201d vesting after a change in control for long-term incentive awards (see page 94)",
+                    "No current payment of dividend equivalents on unvested long-term incentives for executives"
+                ],
+                [
+                    "% Significant stock ownership guidelines (see page 95)",
+                    "No repricing of stock options"
+                ],
+                [
+                    "% Payouts capped on executive incentive programs",
+                    "No pledging, hedging, short sales, or derivative transactions"
+                ],
+                [
+                    "% ESG and Human Capital metrics tied to executive and employee compensation (see page 82)",
+                    "No employment agreements for our named executive officers (\u201cNEOs\u201d)"
+                ],
+                [
+                    "% Executives\u2019 incentive compensation subject to clawback policy (see page 95)",
+                    "Don\u2019t reward executives for excessive, inappropriate or unnecessary risk-taking"
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_16_1",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_16",
+        "title": "2021-2023 PSP Performance and Payout",
+        "recommended_visualization": "pie chart",
+        "insight": "Shows the weighting, performance, and payout for TSR and Adjusted ROCE metrics used in PSP calculation.",
+        "table_data": {
+            "columns": [
+                "Metric Category",
+                "Category Weighting",
+                "Metric",
+                "PSP Results and Performance Summary",
+                "Payout",
+                "Weighted Payout"
+            ],
+            "rows": [
+                [
+                    "TSR",
+                    "60%",
+                    "Total Shareholder Return (relative to peers)",
+                    "4th in peer group (71st percentile; 160% payout per matrix) for 2021- 2023 based on 20-day average methodology",
+                    "160%",
+                    "96%"
+                ],
+                [
+                    "Financial(1)",
+                    "40%",
+                    "Adjusted ROCE (relative to peers)",
+                    "4th in peer group (63rd percentile; 137% payout per matrix)",
+                    "137%",
+                    "55%"
+                ],
+                [
+                    "Total Payout",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "151%"
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_20_1",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_20",
+        "title": "Value Realized from Option Exercises and Stock Vesting (2023)",
+        "recommended_visualization": "bar chart",
+        "insight": "Shows the value executives realized upon exercising stock options and vesting of stock awards.",
+        "table_data": {
+            "columns": [
+                "Name",
+                "Option Awards(1) Number of Shares Acquired on Exercise (#)",
+                "Option Awards(1) Value Realized Upon Exercise",
+                "Stock Awards(1) Number of Shares Acquired on Vesting (#)",
+                "Stock Awards(1) Value Realized Upon Vesting"
+            ],
+            "rows": [
+                [
+                    "R.M. Lance",
+                    "569,400",
+                    "$32,272,738",
+                    "309,369(2)",
+                    "$32,477,219"
+                ],
+                [
+                    "W.L. Bullock, Jr.",
+                    "-",
+                    "-",
+                    "73,584(2)",
+                    "7,725,018"
+                ],
+                [
+                    "K.B. Rose",
+                    "-",
+                    "-",
+                    "66,876(3)",
+                    "7,034,023"
+                ],
+                [
+                    "N.G. Olds",
+                    "-",
+                    "-",
+                    "37,061(4)",
+                    "3,888,406"
+                ],
+                [
+                    "D.E. Macklon",
+                    "-",
+                    "-",
+                    "57,327(4)",
+                    "6,014,793"
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "4ea748f4-d58d-46e4-a549-cdb9d1791c2b_4ea748f4-d58d-46e4-a549-cdb9d1791c2b_3_5",
+        "pdf_id": "4ea748f4-d58d-46e4-a549-cdb9d1791c2b",
+        "chunk_id": "4ea748f4-d58d-46e4-a549-cdb9d1791c2b_3",
+        "title": "Capital Expenditure and Investments (2012-2016)",
+        "recommended_visualization": "line chart",
+        "insight": "Shows the trend of capital expenditure and investments over the period, including the average reinvestment rate. Crucial for understanding investment strategy.",
+        "table_data": {
+            "columns": [
+                "Numerator",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "Average 2012-2016 Reinvestment Rate"
+            ],
+            "rows": [
+                [
+                    "Capital Expenditure and Investments",
+                    "14,172",
+                    "15,537",
+                    "17,085",
+                    "10,050",
+                    "4,869",
+                    "104%"
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_10_1",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_10",
+        "title": "Director Deferred Shares/Units of Stock",
+        "recommended_visualization": "bar chart",
+        "insight": "Shows the number of deferred shares or units of stock held by each director.",
+        "table_data": {
+            "columns": [
+                "Name",
+                "Number of Deferred Shares or Units of Stock"
+            ],
+            "rows": [
+                [
+                    "D.V. [Page 58] Arriola",
+                    "2,583"
+                ],
+                [
+                    "C.M. [Page 58] Devine (retired)",
+                    "18,777"
+                ],
+                [
+                    "J. [Page 58] Freeman (resigned)",
+                    "25,914"
+                ],
+                [
+                    "G. [Page 58] Huey Evans",
+                    "44,162"
+                ],
+                [
+                    "J.A. [Page 58] Joerres",
+                    "19,077"
+                ],
+                [
+                    "W.H. [Page 58] McRaven",
+                    "17,967"
+                ],
+                [
+                    "S. [Page 58] Mulligan",
+                    "20,556"
+                ],
+                [
+                    "E.D. [Page 58] Mullins",
+                    "16,131"
+                ],
+                [
+                    "A.N. [Page 58] Murti",
+                    "49,318"
+                ],
+                [
+                    "R.A. Niblock",
+                    "83,997"
+                ],
+                [
+                    "D.T. Seaton",
+                    "10,057"
+                ],
+                [
+                    "R.A. Walker",
+                    "10,057"
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_2_3",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_2",
+        "title": "Board of Directors: Gender Diversity",
+        "recommended_visualization": "pie chart",
+        "insight": "Shows the gender distribution within the Board of Directors, highlighting the commitment to onboarding a new female director.",
+        "table_data": {
+            "columns": [
+                "DIRECTOR NOMINEE",
+                "GENDER DIVERSITY"
+            ],
+            "rows": [
+                [
+                    "16% Women",
+                    ""
+                ],
+                [
+                    "10 Men",
+                    ""
+                ],
+                [
+                    "2 Women",
+                    "We are committed to onboarding at least one new female director by the end of 2024."
+                ]
+            ]
+        }
+    },
+    {
+        "table_id": "942cffff-00d5-412b-a8d5-08728161e168_942cffff-00d5-412b-a8d5-08728161e168_18_1",
+        "pdf_id": "942cffff-00d5-412b-a8d5-08728161e168",
+        "chunk_id": "942cffff-00d5-412b-a8d5-08728161e168_18",
+        "title": "Breakdown of All Other Compensation for Executives (2023)",
+        "recommended_visualization": "bar chart",
+        "insight": "Shows the different components of 'All Other Compensation' for each executive.",
+        "table_data": {
+            "columns": [
+                "Name",
+                "Personal Use of Company Aircraft(a)",
+                "Business Related Use of Company Aircraft(b)",
+                "Matching Gift Program(c)",
+                "Other(d)",
+                "Tax and Financial Planning(e)",
+                "Expatriate(f)",
+                "Executive Group Life Insurance Premiums(g)",
+                "Tax Reimbursement Gross-Up(h)",
+                "Matching Contributions Under the Tax-Qualified Savings Plans(i)",
+                "Company Contributions to Non- Qualified Defined Contribution Plans(j)",
+                "Total"
+            ],
+            "rows": [
+                [
+                    "R.M. Lance",
+                    "$100,354",
+                    "$62,965",
+                    "$ -",
+                    "$52,171",
+                    "$15,000",
+                    "$ -",
+                    "$ 10,476",
+                    "$ 7,074",
+                    "$39,600",
+                    "$160,745",
+                    "$448,385"
+                ],
+                [
+                    "W.L. Bullock, Jr.",
+                    "-",
+                    "-",
+                    "10,000",
+                    "17,798",
+                    "15,000",
+                    "61,350",
+                    "6,042",
+                    "754",
+                    "39,600",
+                    "75,932",
+                    "226,476"
+                ],
+                [
+                    "K.B. Rose",
+                    "-",
+                    "-",
+                    "10,000",
+                    "23,574",
+                    "15,203",
+                    "-",
+                    "5,695",
+                    "16,714",
+                    "39,600",
+                    "69,318",
+                    "180,104"
+                ],
+                [
+                    "N.G. Olds",
+                    "2,972",
+                    "45,258",
+                    "10,000",
+                    "57,045",
+                    "15,000",
+                    "-",
+                    "5,051",
+                    "7,558",
+                    "39,600",
+                    "56,954",
+                    "239,438"
+                ],
+                [
+                    "D.E. Macklon",
+                    "-",
+                    "-",
+                    "10,000",
+                    "433",
+                    "-",
+                    "-",
+                    "5,420",
+                    "-",
+                    "39,600",
+                    "64,026",
+                    "119,479"
+                ]
+            ]
+        }
+    }
+]

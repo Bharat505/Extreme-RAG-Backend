@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
+requests
+google-generativeai
+concurrent.futures
+fastapi.middleware.cors
+fastapi.staticfiles
