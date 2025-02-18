@@ -8,6 +8,5 @@ seaborn
 plotly
 requests
 google-generativeai
-concurrent.futures
 fastapi.middleware.cors
 fastapi.staticfiles
