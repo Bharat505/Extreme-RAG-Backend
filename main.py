@@ -4,7 +4,7 @@ import json
 import pandas as pd
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import glob
