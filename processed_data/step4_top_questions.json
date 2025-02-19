@@ -1,36 +1,36 @@
 {
     "top_10_overall_questions": [
-        "What is the date of the ConocoPhillips Annual Meeting of Stockholders?",
-        "Where will the ConocoPhillips Annual Meeting of Stockholders be held?",
+        "When will the ConocoPhillips Annual Meeting of Stockholders be held?",
+        "Where will the ConocoPhillips Annual Meeting of Stockholders be held online?",
+        "What is the ConocoPhillips Investor Services Program?",
+        "Are purchases of company stock through direct cash payment subject to commission?",
+        "What toll-free number can be called to request an enrollment package for the ConocoPhillips Investor Services Program?",
+        "What is the website to enroll online for the ConocoPhillips Investor Services Program?",
         "What is the address of ConocoPhillips' principal office?",
-        "Who is the stock transfer agent and registrar for ConocoPhillips?",
-        "What is the website for ConocoPhillips?",
-        "What is the phone number for ConocoPhillips Investor Relations?",
+        "Who is the Stock Transfer Agent and Registrar for ConocoPhillips?",
         "What is the email address for ConocoPhillips Investor Relations?",
-        "What is the phone number for ConocoPhillips Shareholder Relations?",
-        "What is the email address for ConocoPhillips Shareholder Relations?",
-        "What phone number can be called to request copies of the Proxy Statement and the 2023 Annual Report?"
+        "What phone number can be called to request copies of the Proxy Statement and Annual Report?"
     ],
     "top_10_per_pdf_questions": {
-        "ee86eab0-0fec-4708-9dd2-d4f352a996c0": {
+        "db05ab28-f58f-4c25-a515-9c911c273796": {
             "pdf_name": "2024-conocophillips-proxy-statement.pdf",
             "top_questions": [
-                "What is the date of the ConocoPhillips Annual Meeting of Stockholders?",
-                "Where will the ConocoPhillips Annual Meeting of Stockholders be held?",
-                "What is the ConocoPhillips Investor Services Program?",
-                "What is the address of ConocoPhillips' principal office?",
-                "What is the address of ConocoPhillips' registered office?",
-                "Who is the stock transfer agent and registrar for ConocoPhillips?",
-                "What is the address of Computershare?",
-                "What is the website for ConocoPhillips?",
-                "What is the phone number for ConocoPhillips Investor Relations?",
-                "What is the email address for ConocoPhillips Investor Relations?"
+                "No question generated"
             ]
         },
-        "fe3522d0-388d-416a-a446-db6b107c8d00": {
-            "pdf_name": "2023-conocophillips-aim-presentation.pdf",
+        "bd7dcc75-59fb-4662-af06-1dd20791a672": {
+            "pdf_name": "2024-conocophillips-proxy-statement.pdf",
             "top_questions": [
-                "No question generated"
+                "When will the ConocoPhillips Annual Meeting of Stockholders be held?",
+                "Where will the ConocoPhillips Annual Meeting of Stockholders be held online?",
+                "What is the ConocoPhillips Investor Services Program?",
+                "Are purchases of company stock through direct cash payment subject to commission?",
+                "What toll-free number can be called to request an enrollment package for the ConocoPhillips Investor Services Program?",
+                "What is the website to enroll online for the ConocoPhillips Investor Services Program?",
+                "What is the address of ConocoPhillips' principal office?",
+                "Who is the Stock Transfer Agent and Registrar for ConocoPhillips?",
+                "What is the email address for ConocoPhillips Investor Relations?",
+                "What phone number can be called to request copies of the Proxy Statement and Annual Report?"
             ]
         }
     }

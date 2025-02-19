@@ -1,10 +1,10 @@
 import json
 import time
 import re
-import google.generativeai as genai  # Corrected import
+from google import genai
 
 # Initialize the Gemini client
-genai.configure(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")  # Corrected client setup
+client = genai.Client(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")
 
 # ----------------- Utility Functions -----------------
 
@@ -21,31 +21,29 @@ def call_gemini_with_backoff(prompt, max_retries=5, initial_delay=5):
     """
     for attempt in range(max_retries):
         try:
-            response = genai.GenerativeModel("gemini-2.0-flash").generate_content(prompt)  # ✅ Correct API Call
+            response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
             raw_text = clean_json_response(response.text)
-
-            # Extract JSON from the response text
+            
             json_match = re.search(r'\{.*\}', raw_text, re.DOTALL)
             if json_match:
                 return json.loads(json_match.group(0))
             else:
                 print(f"⚠️ Invalid JSON format received. Retrying... (Attempt {attempt + 1})")
-                time.sleep(initial_delay * (2 ** attempt))  # Exponential backoff
+                time.sleep(initial_delay * (2 ** attempt))
         
         except json.JSONDecodeError:
             print(f"❌ JSON Decode Error (Attempt {attempt + 1})")
             time.sleep(initial_delay * (2 ** attempt))
         except RuntimeError as e:
-            if "RESOURCE_EXHAUSTED" in str(e) or "429" in str(e):
+            if "RESOURCE_EXHAUSTED" in str(e):
                 wait_time = initial_delay * (2 ** attempt)
                 print(f"⚠️ API Quota Exceeded. Retrying in {wait_time} seconds...")
                 time.sleep(wait_time)
             else:
-                raise e  # Raise any other runtime errors immediately
-
+                raise e
+    
     print("❌ Max retries reached. Could not process request.")
     return {}
-
 
 def generate_final_summaries_and_comparisons(df_step3, output_summary="processed_data/final_summaries.json", output_comparison="processed_data/comparisons.json"):
     """

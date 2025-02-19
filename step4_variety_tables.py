@@ -7,10 +7,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import plotly.io as pio
-import google.generativeai as genai  # Corrected import
+from google import genai
+
 
 # Initialize the Gemini client
-client=genai.configure(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")  # Corrected client setup
+client = genai.Client(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")
 
 # Define output directories
 PROCESSED_DIR = "processed_data"
@@ -43,26 +44,19 @@ def call_gemini_with_backoff(prompt, max_retries=5, initial_delay=5):
     """
     for attempt in range(max_retries):
         try:
-            response = genai.GenerativeModel("gemini-2.0-flash").generate_content(prompt)  # ✅ Fixed API Call
-            raw_text = response.text  # Extract response text directly
-
-            print(f"🔍 Gemini Raw Response (Attempt {attempt + 1}): {raw_text}")  # ✅ Debugging output
-
-            # Convert JSON response
+            response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+            raw_text = clean_json_response(response.text)
             return json.loads(raw_text)
-
         except json.JSONDecodeError:
             print(f"❌ JSON Decode Error (Attempt {attempt + 1}) - Response: {raw_text}")
-            time.sleep(initial_delay * (2 ** attempt))  # Exponential backoff
-        
+            time.sleep(initial_delay * (2 ** attempt))
         except RuntimeError as e:
-            if "RESOURCE_EXHAUSTED" in str(e) or "429" in str(e):
+            if "RESOURCE_EXHAUSTED" in str(e):
                 wait_time = initial_delay * (2 ** attempt)
                 print(f"⚠️ API Quota Exceeded. Retrying in {wait_time} seconds...")
                 time.sleep(wait_time)
             else:
-                raise e  # Raise any other runtime errors immediately
-
+                raise e
     print("❌ Max retries reached. Could not process request.")
     return {}
 
