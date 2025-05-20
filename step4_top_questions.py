@@ -4,7 +4,7 @@ import re
 from google import genai
 
 # Initialize the Gemini client
-client = genai.Client(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")
+client = genai.Client(api_key="")
 
 def clean_json_response(response_text: str) -> str:
     """Cleans up raw JSON response from Gemini, ensuring proper formatting."""
