@@ -11,7 +11,7 @@ from google import genai
 
 
 # Initialize the Gemini client
-client = genai.Client(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")
+client = genai.Client(api_key="")
 
 # Define output directories
 PROCESSED_DIR = "processed_data"
