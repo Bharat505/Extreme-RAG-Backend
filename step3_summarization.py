@@ -7,7 +7,7 @@ from google import genai
 from concurrent.futures import ThreadPoolExecutor  # For parallel processing
 
 # Initialize the Gemini client
-client = genai.Client(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")
+client = genai.Client(api_key="")
 
 # ----------------- Utility Functions -----------------
 
