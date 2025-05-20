@@ -7,7 +7,7 @@ import re
 import google.generativeai as genai  # Corrected import
 
 # Initialize the Gemini client
-genai.configure(api_key="AIzaSyC5FUT2l7ApdCB19sE2i_ZxWb11BJkwubY")  # Corrected client setup
+genai.configure(api_key="")  # Corrected client setup
 
 
 def clean_json_response(response_text: str) -> str:
